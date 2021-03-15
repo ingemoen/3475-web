@@ -26,11 +26,6 @@ def getSetup(hostName):
     return currentUuid
 
 
-    ##host = host_url
-    ## 
-    ## parsed_url = urllib.parse.urlparse('https://www.example.com/page.html')
-    ## print(parsed_url)
-
 @app.route('/')
 def hello():
     setup = getSetup(request.host)
