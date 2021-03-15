@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block header %}
-    <link href="https://dev.xn--strehonning-98a.no/images/{{ setup.id }}/site.css" rel="stylesheet" />
-    <link href="https://dev.xn--strehonning-98a.no/images/{{ setup.id }}/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/images/{{ setup.id }}/site.css" rel="stylesheet" />
+    <link href="/images/{{ setup.id }}/favicon.ico" rel="icon" type="image/x-icon" />
 {% endblock %}
 
 {% block content %}
@@ -14,7 +14,7 @@
             {% else %}
             <div class="col s12 l4">
                 {% endif %}
-                <img src='https://dev.xn--strehonning-98a.no/images/10000/{{ story.img }}' alt="" class="responsive-img materialboxed">
+                <img src='/images/{{ setup.id }}/{{ story.img }}' alt="" class="responsive-img materialboxed">
             </div>
             {% if story.align == "right" %}
             <div class="col s12 l6 offset-l1 pull-l5 right-align">
